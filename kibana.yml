@@ -1,0 +1,15 @@
+# Kibana configuration
+# This file will be mounted into the container
+
+server.name: kibana
+server.host: "0.0.0.0"
+elasticsearch.hosts: [ "http://elasticsearch:9200" ]
+
+# Encryption keys
+xpack.security.encryptionKey: "Fz72I9z+1xOa1dY59pWqT4EZ0SsNROjp"
+xpack.encryptedSavedObjects.encryptionKey: "76ws91KdS1VqlWCIQXeNGXEESjsa9Pgu"
+xpack.reporting.encryptionKey: "gCW4QASWodnFv9fzxv8GoDfDNzNg8q5k"
+
+# Service token authentication
+# The service token will be read from file
+elasticsearch.serviceAccountToken: "${KIBANA_SERVICE_TOKEN}"

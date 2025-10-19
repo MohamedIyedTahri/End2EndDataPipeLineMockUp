@@ -1,0 +1,355 @@
+# ===================================================================
+# .gitignore - Test Technique Data Science
+# ===================================================================
+
+# ===================================================================
+# CREDENTIALS & SECRETS (IMPORTANT!)
+# ===================================================================
+credentials/
+*.password
+*.token
+*.key
+*.pem
+*.p12
+.env
+.env.local
+.env.*.local
+secrets/
+config/secrets/
+
+# ===================================================================
+# PYTHON
+# ===================================================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# ===================================================================
+# DOCKER
+# ===================================================================
+# Docker volumes
+docker-volumes/
+volumes/
+
+# Docker logs
+docker-compose.override.yml
+*.log
+
+# ===================================================================
+# ELASTICSEARCH
+# ===================================================================
+elasticsearch/data/
+elasticsearch/logs/
+data/elasticsearch/
+.es_data/
+
+# ===================================================================
+# MONGODB
+# ===================================================================
+mongodb/data/
+data/mongodb/
+.mongo_data/
+dump/
+
+# ===================================================================
+# KIBANA
+# ===================================================================
+kibana/data/
+.kibana/
+
+# ===================================================================
+# DATA FILES
+# ===================================================================
+# Large data files
+*.csv
+*.json
+*.parquet
+*.pickle
+*.pkl
+*.h5
+*.hdf5
+
+# Exceptions: Keep sample/test data
+!data/sample/*.csv
+!data/test/*.csv
+!tests/fixtures/*.json
+
+# Data directories
+data/raw/
+data/processed/
+data/clean/
+data/exports/
+data/cache/
+data/temp/
+
+# Keep directory structure
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/clean/.gitkeep
+!data/exports/.gitkeep
+
+# ===================================================================
+# MODELS & WEIGHTS
+# ===================================================================
+models/
+*.model
+*.weights
+*.h5
+*.pt
+*.pth
+*.onnx
+*.bin
+*.safetensors
+
+# NLP Models
+spacy_models/
+nltk_data/
+transformers_cache/
+
+# ===================================================================
+# LOGS
+# ===================================================================
+logs/
+*.log
+*.log.*
+log/
+*.out
+*.err
+
+# Keep logs directory
+!logs/.gitkeep
+
+# ===================================================================
+# TEMPORARY FILES
+# ===================================================================
+tmp/
+temp/
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ===================================================================
+# IDEs & EDITORS
+# ===================================================================
+# VSCode
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# Eclipse
+.project
+.pydevproject
+.settings/
+
+# ===================================================================
+# OS
+# ===================================================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ===================================================================
+# MISC
+# ===================================================================
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Compressed files
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# Cache
+.cache/
+cache/
+*.cache
+
+# ===================================================================
+# PROJECT SPECIFIC
+# ===================================================================
+# Screenshots (uncomment to exclude)
+# docs/screenshots/
+
+# Exports
+exports/
+output/
+
+# Test results
+test-results/
+test-reports/
+
+# ===================================================================
+# NOTES
+# ===================================================================
+# Ce fichier .gitignore est configuré pour :
+# 1. Exclure les credentials et secrets (SÉCURITÉ)
+# 2. Exclure les données volumineuses
+# 3. Exclure les fichiers temporaires et caches
+# 4. Exclure les fichiers spécifiques aux IDEs
+# 5. Garder la structure des dossiers avec .gitkeep
+# ===================================================================
